@@ -1,0 +1,112 @@
+body {
+  font-family: Calibri, Cambria, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: #f5f9ff;
+  color: #222;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+h1.headline {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+form {
+  display: grid;
+  gap: 0.8rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #222;
+}
+
+input, select {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  margin-top: 0.5rem;
+}
+
+button.add-btn {
+  background-color: #32ba64;
+  color: white;
+}
+
+#resetBtn {
+  background-color: #ffaf40;
+  color: black;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+ul#eintragsListe {
+  list-style: none;
+  padding: 0;
+}
+
+ul#eintragsListe li {
+  background: #fff;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Für alte Einträge nach Reset */
+ul#eintragsListe li.alt {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .filter {
+    flex-direction: column;
+  }
+
+  button, input, select {
+    width: 100%;
+  }
+}
+
+.eintrag-item {
+  font-family: Calibri, Cambria, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  padding: 4px 6px;
+}
+
+.ausgeglichen {
+  opacity: 0.5;
+  color: #888;
+}
+

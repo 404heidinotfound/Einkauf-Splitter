@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ausgaben-Splitter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1 class="headline">Ausgaben-Splitter</h1>
+
+    <section class="schuldenstand">
+      <div id="schuldenstand">Lade Schuldenstand…</div>
+      <button id="resetBtn">Schuldenstand zurücksetzen</button>
+    </section>
+
+    <section class="formular">
+      <h2>Neuen Eintrag hinzufügen</h2>
+      <form id="eintragForm">
+        <label>Person<select name="person"><option>Heidi</option><option>Roman</option></select></label>
+        <label>Betrag (€)<input name="betrag" type="number" step="0.01" placeholder="00,00" required></label>
+        <label>Kategorie<select name="kategorie">
+          <option>Lebensmittel</option><option>Einrichtung & Möbel</option>
+          <option>Haushalt</option><option>Freizeit & Aktivitäten</option>
+          <option>Reisen</option><option>Mobilität</option>
+        </select></label>
+        <label>Beschreibung (optional)<input name="beschreibung" placeholder="z.B. Supermarkt"></label>
+        <label>Aufteilung
+          <select id="aufteilung" name="aufteilung" required>
+            <option value="50:50">50:50 geteilt</option>
+            <option value="Zahler">Zahlende Person zahlt alles</option>
+            <option value="Andere">Andere Person übernimmt komplett</option>
+          </select>
+        </label>
+        <button type="submit" class="add-btn">Eintrag hinzufügen</button>
+      </form>
+    </section>
+
+    <section class="filter">
+      <select id="filterPerson">
+        <option value="">Alle Personen</option>
+        <option>Heidi</option>
+        <option>Roman</option>
+      </select>
+      <select id="filterKategorie">
+        <option value="">Alle Kategorien</option>
+        <option>Lebensmittel</option>
+        <option>Einrichtung & Möbel</option>
+        <option>Haushalt</option>
+        <option>Freizeit & Aktivitäten</option>
+        <option>Reisen</option>
+        <option>Mobilität</option>
+      </select>
+      <input type="month" id="filterMonat">
+      <button id="filterBtn">Filter anwenden</button>
+      <button id="exportBtn">Export als CSV</button>
+    </section>
+
+    <section class="eintraege">
+      <h2>Alle Einträge</h2>
+      <ul id="eintragsListe"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

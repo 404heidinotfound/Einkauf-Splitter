@@ -1,0 +1,26 @@
+{
+  "name": "splitter",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/404heidinotfound/Einkauf-Splitter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/404heidinotfound/Einkauf-Splitter/issues"
+  },
+  "homepage": "https://github.com/404heidinotfound/Einkauf-Splitter#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "json2csv": "^6.0.0-alpha.2"
+  },
+  "description": ""
+}
